@@ -1,0 +1,44 @@
+.arrow {
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+
+  opacity: 0.4;
+  color: #0d7fb4;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--light-text);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+  z-index: 0;
+}
+.arrow:hover {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--light-text);
+}
+
+.arrowRight {
+  right: 0px;
+}
+
+.arrowDisabled {
+  display: none;
+}
+
+.preload {
+  display: block;
+  height: 330px;
+  width: 192px;
+  content: "";
+  z-index: 2;
+}
+
+.hidden {
+  visibility: hidden;
+}
+

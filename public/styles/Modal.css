@@ -1,0 +1,14 @@
+.btn-save:hover{
+	background-color: #198754 !important;
+}
+.btn-selected{
+	border: none;
+	color: white !important;
+	background-color:#0d7fb4 !important;
+}
+.btn-times{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1em;
+	width:  100%;
+}

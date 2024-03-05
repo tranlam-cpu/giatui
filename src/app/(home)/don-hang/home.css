@@ -1,0 +1,150 @@
+*{
+	font-family: Neutra,Helvetica,Arial,Sans-serif;
+	
+}
+.alert-error{
+	background-color:rgb(245,202,153);
+}
+
+.option-selected{
+	background:none;
+	border: 2px solid gray;
+	opacity: 0.5;
+	border-radius: 5px !important;
+}
+.option-selected:hover{
+	border: 2px solid gray !important;
+}
+.active{
+	border: 2px solid #0d7fb4 !important;
+	border-radius: 5px !important;
+}
+.selected:after{
+	content:'\2713';
+	font-size: 10px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 18px;
+	color:white;
+	top:5px;
+	right: 5px;
+	background-color:#0d7fb4;
+	border-radius: 50%;
+	width:16px;
+	height:16px;
+}
+.option-selected:after{
+	content:'\2713';
+	font-size: 10px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 18px;
+	color:white;
+	top:5px;
+	right: 5px;
+	background-color:gray;
+	border-radius: 50%;
+	width:16px;
+	height:16px;
+}
+/*payment*/
+.selected-payment:after{
+	content:'\2713';
+	font-size: 10px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	top: 28px;
+	left: 5px;
+	line-height: 18px;
+	color:white;
+	background-color:#0d7fb4;
+	border-radius: 50%;
+	width:16px;
+	height:16px;
+}
+.option-selected-payment:hover{
+	border: 2px solid #0d7fb4 !important;
+}
+.option-selected-payment{
+	background:none;
+	border: 2px solid #0d7fb4;
+	opacity: 0.5;
+	border-radius: 5px !important;
+}
+.option-selected-payment:after{
+	content:'\2713';
+	font-size: 10px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 18px;
+	color:white;
+	top: 28px;
+	left: 5px;
+	background-color:gray;
+	border-radius: 50%;
+	width:16px;
+	height:16px;
+}
+
+.card{
+	word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: .0625rem solid rgba(231,234,243,.7);
+    border-radius: .75rem;
+}
+.btn-outline-wash:hover{
+	color: white;
+}
+
+.form-check-input:checked {
+    background-color: #0d7fb4;
+    border-color: #0d7fb4;
+}
+input{
+	outline: none;
+}
+
+@media (max-width: 1024px) { 
+	.btn-rps{
+		width:  150px;
+	}
+	
+}
+
+
+.bill-sticky{
+	top: 90px;
+	position:fixed;
+}
+.bill-sticky-bottom{
+	position:absolute;
+	bottom:25px;
+}
+
+@media (max-width: 768px) {
+ 
+
+  .bill {
+  	top: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.rules{
+	font-family: Lato,Sarabun,-apple-system,BlinkMacSystemFont,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: 400;
+    line-height: 1.6;
+    color: #47535e;
+    text-align: left;
+}
+.fa-custom{
+	font-family: Lato,Sarabun,-apple-system,BlinkMacSystemFont,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: 400;
+    line-height: 1.6;
+}

@@ -1,0 +1,56 @@
+
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar-nav {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+#nprogress > .spinner{
+  display: none !important;
+}
+
+
+.time-of-day img{
+  border-radius: 50%;
+}
+
+.dialog-size{
+  min-width: 60%;
+  min-height: 40%;
+  width: auto;
+  height: auto;
+}
+
+.input-name{
+  line-height: 0;
+}
+.p-fileupload{
+  padding: 1rem 0 !important;
+}
+.p-button-rounded{
+  border-radius: 50% !important;
+}
+.p-progressbar{
+  padding: 0 0 !important;
+}
+.p-progressbar-value{
+  padding: 0 0 !important;
+}
+.p-fileupload-content div:nth-child(1){
+  min-height: 0;
+  max-height: auto;
+}
+.p-datatable-wrapper{
+  padding: 0 0 !important;
+}
+.p-dropdown{
+  padding: 0 0 !important;
+}
+.p-dropdown-trigger{
+  padding: 16px 16px !important;
+}
+

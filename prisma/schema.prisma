@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model collected {
+  id        String   @id
+  start     String
+  end       String
+  daytimeId String
+  active    Boolean? @default(true)
+  daytime   daytime  @relation(fields: [daytimeId], references: [id], onDelete: NoAction, map: "Collected_daytimeId_fkey")
+
+  @@index([daytimeId], map: "Collected_daytimeId_fkey")
+}
+
+model daytime {
+  id        String      @id
+  name      String
+  image     String?
+  collected collected[]
+  delivery  delivery[]
+}
+
+model delivery {
+  id        String   @id
+  start     String
+  end       String
+  daytimeId String
+  active    Boolean? @default(true)
+  daytime   daytime  @relation(fields: [daytimeId], references: [id], onDelete: NoAction, map: "Delivery_daytimeId_fkey")
+
+  @@index([daytimeId], map: "Delivery_daytimeId_fkey")
+}
+
+model users {
+  id              String     @id
+  email           String     @unique(map: "Users_email_key")
+  password        String
+  name            String?
+  isActived       Boolean    @default(true)
+  image           String?
+  role            users_role @default(USER)
+  createdAt       DateTime   @default(now())
+  isSuspended     Boolean    @default(false)
+  loginAttempts   Int        @default(0)
+  loginAttemptsAt DateTime?
+  banned          Boolean    @default(false)
+}
+
+enum users_role {
+  ADMIN
+  USER
+}

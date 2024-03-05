@@ -1,0 +1,87 @@
+tr td{
+	padding:1.5em 0;
+	border-bottom: 1px solid gainsboro;
+}
+
+.p-datatable-footer{
+	padding:1em 0;
+}
+tr th{
+	padding:1em 0;
+}
+
+.p-inputtext{
+	padding: 0.75rem 0.75rem;
+	padding-right: 0;
+}
+.p-dropdown-items{
+	text-align: center;
+	padding-left: 0;
+	margin-top: 1rem;
+}
+.p-paginator-bottom{
+	padding: 1rem 0;
+}
+.p-paginator .p-paginator-pages .p-paginator-page{
+	border-radius: 50%;
+}
+.p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+	border-radius: 50%;
+}
+
+.p-datatable-header{
+	padding: 1rem;
+}
+.p-datatable-footer{
+	padding: 1rem;
+}
+.p-datatable-table tr th{
+	padding: 1rem;
+}
+.p-datatable-table tr td{
+	padding: 1rem;
+}
+.p-tooltip{
+	top: 130px !important;
+}
+.p-tooltip-arrow{
+	bottom: -5px !important;
+}
+.p-tooltip-text{
+	padding: 0.3rem;
+}
+
+.p-dialog div{
+	padding: 1rem;
+}
+.p-dialog div:nth-child(n+3){
+	padding-top: 0;
+}
+.p-dialog-header{
+	padding-bottom: 0 !important;
+}
+.p-dialog-header-icons{
+	padding-right: 0 !important;
+}
+.p-confirm-dialog-icon{
+	color:red !important;
+	margin-right:0.5rem;
+}
+.p-dialog-footer button{
+	padding:0.5rem;
+}
+.p-dialog-footer button:nth-child(1){
+	margin-right:0.5rem;
+}
+.p-toast-message{
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+.p-toast-message-content svg{
+	margin-right: 1rem;
+	justify-content: center;
+	margin-top: 0.5rem;
+}
+.p-toast-icon-close svg{
+	margin: 0;
+}
