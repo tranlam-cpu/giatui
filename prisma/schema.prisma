@@ -8,7 +8,7 @@ datasource db {
 }
 
 model collected {
-  id        String   @id
+  id        String   @id @default(cuid())
   start     String
   end       String
   daytimeId String
@@ -19,7 +19,7 @@ model collected {
 }
 
 model daytime {
-  id        String      @id
+  id        String      @id @default(cuid())
   name      String
   image     String?
   collected collected[]
@@ -27,7 +27,7 @@ model daytime {
 }
 
 model delivery {
-  id        String   @id
+  id        String   @id @default(cuid())
   start     String
   end       String
   daytimeId String
@@ -38,7 +38,7 @@ model delivery {
 }
 
 model users {
-  id              String     @id
+  id              String     @id @default(cuid())
   email           String     @unique(map: "Users_email_key")
   password        String
   name            String?

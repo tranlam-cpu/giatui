@@ -230,18 +230,18 @@ async function upLoadFileToS3(file:any,filename:string){
 async function uploadFileOnSql(ImageFromUploadFile:any,name:string){
 	const prisma = new PrismaClient()	
 
-	try {
+try {
 
-		const daytime = await prisma.daytime.create({
-			data:{
-				name:name,
-				image:ImageFromUploadFile
-			}
-		})
-		
-		return daytime
-		
-	}catch(error){
+    const daytime = await prisma.daytime.create({
+        data:{
+            name: name,
+            image: ImageFromUploadFile as string
+        }
+    })
+    
+    return daytime
+    
+}catch(error){
 		return NextResponse.json({success: false, messages:"not found"}, {
 			status: 400,
 		  })
