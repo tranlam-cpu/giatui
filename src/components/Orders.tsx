@@ -128,6 +128,7 @@ const Orders=()=>{
 	 	if (!isDateTime1BeforeDateTime2(collected,delivery)){
 	 		setError(true)
 	      	window.scrollTo(0, 0)
+			return false
 	 	}
 
 		return new Promise((resolve, reject) => {
